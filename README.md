@@ -1,24 +1,26 @@
-# HTML Template Fragment
+## html-template-compiler
 
-html fragment 与 ast JSON 语法树相互转换
+`html-template-compiler` is change **html & ast** for building syntax tree.
+
+### Why?
+
+---
+
+I got tired of compile `HTML Fragment` e.g.`<div class="root">Hello, world</div>` in most of my projects.
+
+### Installation
+
+```
+npm install --save html-template-compiler
+```
 
 ### Usage
 
 ```
-npm install html-template-compiler
-
-const { compiler, render } = require('html-template-compiler')
-
+const compile = require('html-template-compiler')
 ```
 
-### Api
+### Methods
 
-- compiler(fragment)
-  @desc 编译 html 片段
-  @params fragment HTML 片段
-  @return ast json 语法树
-
-- render(ast)
-  @desc 渲染 AST 语法树
-  @params ast json 语法树
-  @return html fragment
+- [compile](docs/compile.md)
+- [render](docs/render.md)

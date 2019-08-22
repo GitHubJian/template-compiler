@@ -18,6 +18,8 @@ Hello, world
 
 var ast = compiler(html)
 
+console.log(compiler('<div class="root">Hello, wrold</div>'))
+
 console.log(JSON.stringify(ast))
 
 console.log('*'.repeat(20))

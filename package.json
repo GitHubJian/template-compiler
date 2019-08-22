@@ -14,7 +14,11 @@
     "type": "git",
     "url": "git+https://github.com/GitHubJian/template-compiler.git"
   },
-  "keywords": [],
+  "keywords": [
+    "html",
+    "ast",
+    "compiler"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
