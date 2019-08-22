@@ -1,4 +1,4 @@
-const { createElement, createTextVNode } = require('../lib/build')
+const { createElement, createTextVNode, createElm } = require('../lib/build')
 
 let a = createElement('div', { attrs: { class: 'root' } }, [
   createElement('h2', { attrs: { class: 'title' } }, [
@@ -41,22 +41,6 @@ let a = createElement('div', { attrs: { class: 'root' } }, [
 ])
 debugger
 // TODO: vue Line: 5682
-function createElement$1(tagName, vnode) {
-  var elm = document.createElement(tagName)
-  if (tagName !== 'select') {
-    return elm
-  }
-  // false or null will remove the attribute but undefined will not
-  if (
-    vnode.data &&
-    vnode.data.attrs &&
-    vnode.data.attrs.multiple !== undefined
-  ) {
-    elm.setAttribute('multiple', 'multiple')
-  }
-  return elm
-}
-
-var b = createElement$1(a.tag, a)
-
+console.log(a)
+var b = createElm(a)
 console.log(b)
